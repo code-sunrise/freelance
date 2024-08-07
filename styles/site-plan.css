@@ -5,7 +5,7 @@
     https://coolors.co/e5d7ef-000d24-3a015c-8b56ab-dcabf9-ffffff
     */
     --primary-color: #000D24;
-    --secondary-color: #3A015C;
+    --secondary-color: #2f2138;
     --accent1-color: #8B56AB;
     --accent2-color: #DCABF9;
     --accent3-color: #E5D7EF;
@@ -17,22 +17,22 @@
     /*--typography palette--*/
 
     /* headlines on a white background */
-    --headline-color-on-white: #7f9183;
+    --headline-color-on-white: #3A015C;
 
     /* headlines on a colored background */
-    --headline-color-on-color: white;
+    --headline-color-on-color: black;
 
     /* paragraph text on a white background */
-    --paragraph-color-on-white: #474971;
+    --paragraph-color-on-white: #311e3c;
 
     /* paragraph text on a colored background */
     --paragraph-color-on-color: black;
 
-    --paragraph-background-color: #c9b6e2;
-    --nav-link-color: #efc0ef;
-    --nav-background-color: #474971;
-    --nav-hover-link-color: #474971;
-    --nav-hover-background-color: #efc0ef;
+    --paragraph-background-color: #E5D7EF;
+    --nav-link-color: #DCABF9;
+    --nav-background-color: #3A015C;
+    --nav-hover-link-color: #3A015C;
+    --nav-hover-background-color: #DCABF9;
 
     /*--check color contrast
     https://coolors.co/contrast-checker/112a46-acc8e5
@@ -78,7 +78,7 @@ header {
     padding: 1em;
     text-align: center;
     color: var(--headline-color-on-color);
-    background-color: var(--paragraph-background-color);
+    background-color: var(--accent2-color);
 }
 
 header>h1,
