@@ -1,0 +1,254 @@
+/*--root--*/
+:root {
+    /*--color palette--*/
+    /*coloors URL:
+    https://coolors.co/e5d7ef-000d24-3a015c-8b56ab-dcabf9-ffffff
+    */
+    --primary-color: #000D24;
+    --secondary-color: #3A015C;
+    --accent1-color: #8B56AB;
+    --accent2-color: #DCABF9;
+    --accent3-color: #E5D7EF;
+
+    /*--fonts--*/
+    --heading-font: "Fjalla One", sans-serif;
+    --paragraph-font: "Raleway", Helvetica, sans-serif;
+
+    /*--typography palette--*/
+
+    /* headlines on a white background */
+    --headline-color-on-white: #7f9183;
+
+    /* headlines on a colored background */
+    --headline-color-on-color: white;
+
+    /* paragraph text on a white background */
+    --paragraph-color-on-white: #474971;
+
+    /* paragraph text on a colored background */
+    --paragraph-color-on-color: black;
+
+    --paragraph-background-color: #c9b6e2;
+    --nav-link-color: #efc0ef;
+    --nav-background-color: #474971;
+    --nav-hover-link-color: #474971;
+    --nav-hover-background-color: #efc0ef;
+
+    /*--check color contrast
+    https://coolors.co/contrast-checker/112a46-acc8e5
+    --*/
+}
+
+/*--elements--*/
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+}
+
+h2 {
+    text-align: center;
+}
+
+hr {
+    height: 3px;
+    margin: 35px 0;
+    background: var(--accent1-color);
+}
+
+header {
+    padding: 1em;
+    text-align: center;
+    color: var(--headline-color-on-color);
+    background-color: var(--paragraph-background-color);
+}
+
+header>h1,
+header>h2 {
+    color: var(--headline-color-on-color);
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-white);
+    padding: 1em;
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.colors th {
+    background-color: #999;
+}
+
+.colors td {
+    width: 20%;
+    height: 3em;
+}
+
+.primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.accent1 {
+    background-color: var(--accent1-color);
+}
+
+.accent2 {
+    background-color: var(--accent2-color);
+}
+.accent3 {
+    background-color: var(--accent3-color);
+}
+
+p.colored {
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+nav {
+    list-style-type: none;
+    display: flex;
+
+}
+
+nav a {
+    padding: 1em;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 10px;
+
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+.sitemap {
+    display: grid;
+    justify-content: center;
+
+    grid-template-columns: repeat(6, 15%);
+    grid-template-rows: 3em 1.5em 1.5em 3em;
+    grid-template-areas: ". . home home . ."
+        ". . . top . ."
+        ". left left right right ."
+        "page2 page2 . . page3 page3";
+}
+
+.sitemap>div {
+
+    text-align: center;
+
+}
+
+.sm-home {
+    grid-area: home;
+    background-color: #ccc;
+    line-height: 3em;
+}
+
+.sm-page2 {
+    grid-area: page2;
+    background-color: #ccc;
+    line-height: 3em;
+}
+
+.sm-page3 {
+    grid-area: page3;
+    background-color: #ccc;
+    line-height: 3em;
+}
+
+.top {
+    grid-area: top;
+    border-left: 1px solid;
+}
+
+.left {
+    grid-area: left;
+    border-top: 1px solid;
+    border-left: 1px solid;
+}
+
+.right {
+    grid-area: right;
+    border-top: 1px solid;
+    border-right: 1px solid;
+}
+
+button {
+    color: white;
+}
+
+/* -- BUTTONS colorchef -- */
+
+
+
+.button {
+    background-color: #3a015c;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 5px -5px 15px hsl(277.5824175824176deg 97.8494623655914% 85% / 0.5), -5px 5px 15px hsl(277.5824175824176deg 97.8494623655914% 55% / 0.5);
+    width: 8rem;
+    /* adjust as required */
+    height: 4rem;
+    /* adjust as required */
+
+}
+
+.button:hover {
+    background: linear-gradient(225deg, hsl(277.5824175824176deg 97.8494623655914% 65% / 0.5), hsl(277.5824175824176deg 97.8494623655914% 85% / 0.5));
+    border: none;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 5px -5px 15px hsl(277.5824175824176deg 97.8494623655914% 85% / 0.5), -5px 5px 15px hsl(277.5824175824176deg 97.8494623655914% 55% / 0.5);
+
+}
+
+.button:disabled {
+    background-color: #3a015c;
+    border-radius: 8px;
+    color: white
+}
