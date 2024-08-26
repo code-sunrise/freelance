@@ -218,10 +218,6 @@ nav a:hover {
     border-right: 1px solid;
 }
 
-button {
-    color: white;
-}
-
 /* -- BUTTONS colorchef -- */
 
 
@@ -235,6 +231,7 @@ button {
     /* adjust as required */
     height: 4rem;
     /* adjust as required */
+    color: white;
 
 }
 
