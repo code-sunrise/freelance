@@ -1,96 +1,68 @@
-/*--root--*/
 :root {
-    /*--color palette--*/
-    /*coloors URL:
-    https://coolors.co/e5d7ef-000d24-3a015c-8b56ab-dcabf9-ffffff
-    */
-    --primary-color: #170d34;
-    --secondary-color: #a43af3;
-    --accent1-color: #2e2348;
-    --accent2-color: #2e2348;
-    --accent3-color: #2e2348;
-
-    /*--fonts--*/
-    --heading-font: "Kanit", sans-serif;
-    --paragraph-font: "Anek devangari", Helvetica, sans-serif;
-
-    /*--typography palette--*/
-
-    /* headlines on a white background */
-    --headline-color-on-white: white;
-
-    /* headlines on a colored background */
-    --headline-color-on-color: white;
-
-    /* paragraph text on a white background */
-    --paragraph-color-on-white: white;
-
-    /* paragraph text on a colored background */
-    --paragraph-color-on-color: white;
-
-    --paragraph-background-color: #503e6b;
-    --nav-link-color: white;
-    --nav-background-color: #2e2348;
-    --nav-hover-link-color: black;
-    --nav-hover-background-color: #940af0;
-
-    /*--check color contrast
-    https://coolors.co/contrast-checker/112a46-acc8e5
-    --*/
+    /** CSS DARK THEME PRIMARY COLORS */
+    --color-primary-100: #940af0;
+    --color-primary-200: #a43af3;
+    --color-primary-300: #b257f5;
+    --color-primary-400: #bf71f7;
+    --color-primary-500: #cc89f9;
+    --color-primary-600: #d8a1fb;
+    /** CSS DARK THEME SURFACE COLORS */
+    --color-surface-100: #170d34;
+    --color-surface-200: #2e2348;
+    --color-surface-300: #453b5d;
+    --color-surface-400: #5e5472;
+    --color-surface-500: #776e88;
+    --color-surface-600: #91899f;
+    /** CSS DARK THEME MIXED SURFACE COLORS */
+    --color-surface-mixed-100: #221044;
+    --color-surface-mixed-200: #392657;
+    --color-surface-mixed-300: #503e6b;
+    --color-surface-mixed-400: #67577e;
+    --color-surface-mixed-500: #7f7193;
+    --color-surface-mixed-600: #988ba8;
 }
 
-
-/*--elements--*/
-
 body {
-    background: var(--primary-color);
+    background: var(--color-surface-100);
     max-width: 1200px;
     margin: 0 auto;
     padding: 4em;
     font-size: 18px;
     text-align: center;
+    color: white;
 }
-
+main {
+    background: var(--color-surface-mixed-100);
+    border: 5px solid var(--color-primary-300);
+}
 img {
     display: block;
     margin: 0 auto;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: var(--heading-font);
-    color: var(--headline-color-on-white);
-}
-
 h2 {
     text-align: center;
 }
-
 hr {
     height: 3px;
     margin: 35px 0;
-    background: var(--accent1-color);
-}
+    background: var(--color-primary-100);
 
+}
 header {
     padding: 1em;
     text-align: center;
-    color: var(--headline-color-on-color);
-    background-color: var(--accent2-color);
+    color: white;
+    color: white;
+    background: var(--color-surface-100);
+    border: 5px solid var(--color-primary-300);
+    margin-bottom: 20px;
+    /*color: var(--headline-color-on-color);
+    background-color: var(--accent2-color);*/
 }
-
-header>h1,
-header>h2 {
-    color: var(--headline-color-on-color);
-}
-
 p {
-    font-family: var(--paragraph-font);
-    color: var(--paragraph-color-on-white);
+    /*font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-white);*/
     padding: 1em;
 }
 
@@ -102,7 +74,8 @@ p {
 }
 
 .colors th {
-    background-color: #999;
+    background-color: var(--color-primary-100);
+    /*background-color: #999;*/
 }
 
 .colors td {
@@ -111,34 +84,32 @@ p {
 }
 
 .primary {
-    background-color: var(--primary-color);
-    color: white;
+    /*background-color: var(--primary-color);*/
 }
 
 .secondary {
-    background-color: var(--secondary-color);
-    color: white;
+    /*background-color: var(--secondary-color);*/
 }
 
 .accent1 {
-    background-color: var(--accent1-color);
+   /* background-color: var(--accent1-color);*/
 }
 
 .accent2 {
-    background-color: var(--accent2-color);
+    /*background-color: var(--accent2-color);*/
 }
 
 .accent3 {
-    background-color: var(--accent3-color);
+   /* background-color: var(--accent3-color);*/
 }
 
 p.colored {
-    background-color: var(--paragraph-background-color);
-    color: var(--paragraph-color-on-color);
+   /* background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);*/
 }
 
 nav {
-    background-color: var(--nav-background-color);
+    /*background-color: var(--nav-background-color);*/
     line-height: 3em;
     text-align: center;
     font-size: 1.2em;
@@ -160,12 +131,12 @@ nav a {
 
 nav a:link,
 nav a:visited {
-    color: var(--nav-link-color);
+    /*color: var(--nav-link-color);*/
 }
 
 nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
+    /*color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);*/
 }
 
 .sitemap {
@@ -183,7 +154,6 @@ nav a:hover {
 .sitemap>div {
 
     text-align: center;
-
 }
 
 .sm-home {
