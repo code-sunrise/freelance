@@ -1,0 +1,1 @@
+//code for displaying gallery of projects rather than indiv <div>s
