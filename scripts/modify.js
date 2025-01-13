@@ -1,1 +1,1 @@
-document.querySelector("#lastModified").textContent = document.lastModified;
+document.querySelector("#lastModified").textContent = new Date(document.lastModified).toLocaleDateString();
